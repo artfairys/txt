@@ -1,0 +1,137 @@
+/**
+	 * 头部样式
+	 */
+
+#onlyid-wallpaperHead .navbar-fixed-top {
+	background-color: #ffff;
+	background-color: #F5F5F5;
+	color: #ffa500;
+	box-shadow: 0px 0px 10px #909090;
+}
+
+#onlyid-wallpaperHead .navbar-fixed-top a {
+	letter-spacing: 1px;
+	color: #ffa500;
+}
+
+#onlyid-wallpaperHead .navbar-fixed-top .navbar-nav a {
+	transition: all 0.3s ease;
+	cursor: pointer;
+	border-radius: 4px;
+}
+
+#onlyid-wallpaperHead .navbar-fixed-top .navbar-nav a:hover {
+	color: #ffff;
+	background-color: #FFA500;
+	border-radius: 4px;
+}
+
+
+/* 
+	 
+	 上传抽屉样式 以及 upload组件样式
+	 
+	 
+	 */
+#onlyid-wallpaperHead .user-upload-container .container {
+	/* margin-top: 15px; */
+	height: 70vh;
+}
+
+#onlyid-wallpaperHead .user-upload-container .container .upload-demo {
+	height: 60%;
+}
+#onlyid-wallpaperHead .user-upload-container .upload-drawer{
+	overflow-y: auto;
+}
+#onlyid-wallpaperHead .user-upload-container .upload-drawer::-webkit-scrollbar {
+	width: 10px;
+	background-color: transparent;
+}
+/*定义滑块 内阴影+圆角*/
+#onlyid-wallpaperHead .user-upload-container .upload-drawer::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	/* box-shadow: rgba(144,147,153,.3);
+	-webkit-box-shadow: rgba(144,147,153,.3); */
+	background-color: rgba(144, 147, 153, .3);
+}
+#onlyid-wallpaperHead .user-upload-container .upload-drawer .el-upload__input {
+	display: none;
+}
+#onlyid-wallpaperHead .user-upload-container .upload-drawer .pull-right{
+	margin-top: 10px;
+	background-color: #FFFFFF;
+	border-color: #FFA500;
+	color: #FFA500;
+	transition: all 0.3s ease;
+}
+#onlyid-wallpaperHead .user-upload-container .upload-drawer .pull-right:hover{
+	background-color: #FFA500;
+	color: #FFFFFF;
+}
+#onlyid-wallpaperHead .user-upload-container .upload-drawer .pull-right .el-icon-upload{
+	transition: all 0.3s ease;
+}
+#onlyid-wallpaperHead .user-upload-container .upload-drawer .pull-right:hover .el-icon-upload{
+	color: #FFFFFF;
+}
+#onlyid-wallpaperHead .user-upload-container .upload-drawer .el-upload {
+	/* display: none; */
+	width: 100%;
+	height: 100%;
+	display: table;
+}
+
+#onlyid-wallpaperHead .user-upload-container .container .upload-demo .el-upload-list{
+	margin-top: 42px;
+	padding-bottom: 40px;
+}
+#onlyid-wallpaperHead .user-upload-container .container .upload-demo .el-upload-list__item-name:hover{
+	color: #FFA500;
+}
+#onlyid-wallpaperHead .user-upload-container .container .el-progress-bar__inner  {
+	background-color: #FFA500 ;
+	/* color: #FFA500 ; */
+}
+#onlyid-wallpaperHead .user-upload-container .upload-drawer .el-upload-dragger {
+	width: 100%;
+	height: 100%;
+	display: table-cell;
+	vertical-align: middle;
+	border-color: #d9d9d9;
+}
+
+#onlyid-wallpaperHead .user-upload-container .upload-drawer .el-upload-dragger:hover {
+	border-color: #FFA500;
+}
+
+#onlyid-wallpaperHead .user-upload-container .upload-drawer .el-icon-upload {
+	margin-top: 0px;
+	color: #FFA500;
+}
+/**
+ * 没有登录时 上传抽屉样式
+ 
+ 
+ */
+#onlyid-wallpaperHead .user-upload-container .upload-drawer .not-upload-text{
+	display: table;
+	text-align: center;
+	height: 60%;
+	width: 100%;
+	border: 1px dashed #d9d9d9;
+	border-radius: 6px;
+	cursor: pointer;
+}
+#onlyid-wallpaperHead .user-upload-container .upload-drawer .not-upload-text:hover{
+	border: 1px dashed #FFA500;
+}
+#onlyid-wallpaperHead .user-upload-container .upload-drawer .not-upload-text i{
+	font-size: 67px;
+	color: #FFA500;
+}
+#onlyid-wallpaperHead .user-upload-container .upload-drawer .not-upload-text .row{
+	/* width: 100%; */
+	display: table-cell;
+	vertical-align: middle;
+}

@@ -1,0 +1,275 @@
+/* home 样式 */
+#haruhihome #ceratetime {
+		animation: change 10s infinite;
+		font-weight: 800;
+	}
+	
+	@keyframes change {
+		0% {
+			color: #5cb85c;
+		}
+	
+		25% {
+			color: #556bd8;
+		}
+	
+		50% {
+			color: #e40707;
+		}
+	
+		75% {
+			color: #66
+		}
+}
+
+/* #container 滚动条一隐藏 */
+#haruhihome #container::-webkit-scrollbar{
+    width: 0px;
+  }
+
+#haruhihome .navbar-fixed-top {
+	background-color: rgba(0, 0, 0, 0);
+	border: none;
+	margin: 0;
+}
+
+
+
+#haruhihome a:focus {
+	outline: none;
+}
+
+/*---------------------------------------
+			  BUTTON              
+			-----------------------------------------*/
+#haruhihome .btn-a {
+	border-bottom: 2px solid #fff;
+	border-left: 2px solid #fff;
+	border-top: 2px solid #fff;
+	border-right: 1px solid #fff;
+	color: #fff;
+	transition: all 0.3s ease;
+	background: transparent;
+	padding: 14px 38px;
+	font-size: 12px;
+	letter-spacing: 2px;
+	border-radius: 4px 0px 0px 4px;
+	line-height: 1.33333;
+	display: inline-block;
+	text-align: center;
+	font-weight: bold;
+
+}
+#haruhihome .btn-msg{
+	border-bottom-left-radius: 0px;
+	border-top-left-radius: 0px;
+	/* border-left: none; */
+}
+
+#haruhihome .font-change {
+	color: #fff;
+	transition: all 0.3s ease;
+	background: transparent;
+	padding: 14px 8px;
+	font-size: 16px;
+	letter-spacing: 0.7px;
+	border-radius: 4px 0px 0px 4px;
+	line-height: 1.33333;
+	display: inline-block;
+	text-align: center;
+	font-weight: bold;
+}
+
+#haruhihome .font-change-login {
+	color: #fff;
+	transition: all 0.3s ease;
+	background: transparent;
+	padding: 3px;
+	font-size: 14px;
+	letter-spacing: 1px;
+	border-radius: 4px 0px 0px 4px;
+	line-height: 1.33333;
+	display: inline-block;
+	text-align: center;
+	font-weight: bold;
+	max-width: 26vw;
+	/* 强制不换行 */
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	overflow: hidden; /*自动隐藏文字*/
+}
+
+#haruhihome .font-change-login:hover {
+	color: #ffa500;
+	background-color: rgba(0, 0, 0, 0);
+}
+#haruhihome .sub-menu li a {
+	padding: 30px 5px;
+}
+#haruhihome li {
+	list-style: none;
+}
+
+#haruhihome .btn-a:hover {
+	color: #fff;
+	background: #ffa500;
+	border-color: #ffa500;
+	text-decoration: none;
+}
+
+#haruhihome .font-change:hover {
+	color: #ffa500;
+}
+
+#haruhihome .btn-b {
+	border-bottom: 2px solid #fff;
+	border-left: 1px solid #fff;
+	border-top: 2px solid #fff;
+	border-right: 2px solid #fff;
+	color: #fff;
+	transition: all 0.3s ease;
+	background: transparent;
+	padding: 14px 10px;
+	font-size: 12px;
+	letter-spacing: 2px;
+	border-radius: 0px 4px 4px 0px;
+	line-height: 1.33333;
+	display: inline-block;
+	text-align: center;
+	font-weight: bold;
+}
+
+#haruhihome .btn-b:hover {
+	color: #fff;
+	background: #ffa500;
+	border-color: #ffa500;
+	text-decoration: none;
+}
+
+#haruhihome .span-hitok {}
+
+#haruhihome .hiko-from {
+	padding: 40px 0 0 0;
+	font-size: 20px;
+}
+
+/*---------------------------------------
+			  TYPOGRAPHY              
+-----------------------------------------*/
+
+
+#haruhihome h1,
+#haruhihome h2,
+#haruhihome h3,
+#haruhihome h4,
+#haruhihome h5,
+#haruhihome h6 {
+	font-weight: 300;
+}
+
+#haruhihome h2 {
+	font-size: 30px;
+	line-height: 40px;
+	margin-top: 0;
+}
+#haruhihome #container {
+	/* 让自适应浏览器高度 */
+	position: absolute;
+	width: 100%;
+	top: 5%;
+	bottom: 0;
+	overflow: auto;
+	padding-top: 18%;
+}
+
+#haruhihome #container .hito-h2 {
+	font-size: 2rem;
+	color: #ffffff;
+	/* padding: 20% 0; */
+}
+
+#haruhihome #container .title-sh {
+	color: #ffffff;
+}
+
+#haruhihome #container .container-fluid {
+}
+
+#haruhihome #home p {
+	color: rgba(250, 250, 250, 0.7);
+}
+#haruhihome .float-left {
+	margin-top: -0.9375rem;
+	float: left;
+}
+
+#haruhihome .float-right {
+	margin-top: 15px;
+	float: right;
+}
+
+/*---------------------------------------
+			  FOOTER              
+			-----------------------------------------*/
+
+#haruhihome #footer {
+	height: 40px;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+	color: #fff;
+	font-family: Arial;
+	font-size: 14px;
+	letter-spacing: 1px;
+}
+
+
+#haruhihome .overlay {
+	position: fixed;
+	z-index: -1;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0,24%);
+}
+
+#haruhihome .cover {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	/* 	background: rgba(0, 0, 0, 0.9); */
+}
+
+#haruhihome .cover::before {
+	/* https://www.awm.moe/wp-content/uploads/2021/02/120cc3a767306d_1_post.jpg */
+/* https://api.dongmanxingkong.com/suijitupian/acg/1080p/index.php */
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: transparent url(https://api.ixiaowai.cn/api/api.php) center center no-repeat;
+	filter: blur(0px);
+	z-index: -2;
+	background-size: cover;
+}
+
+#haruhihome .padding-0-15 {
+	padding: 0 0.9375rem;
+}
+
+#haruhihome .height-100 {
+	height: 100%;
+}
+#haruhihome .navbar  .navbar-brand .img-thumbnail{
+	padding: 1px;
+	display:inline-block;
+	width:50px;
+	height:50px;
+}

@@ -1,0 +1,116 @@
+/* #MyPlaylist{
+	height: auto;padding-bottom: 40px;
+} */
+#MyPlaylist #editPlaylist {
+		display: none;
+		padding: 15px;
+	}
+
+	#MyPlaylist .panel-main {
+		box-shadow: 0 0 1rem rgb(161 177 204 / 40%);
+		border: none;
+
+		background: transparent url(../../assets/imgs/QQ图片20210508091723.jpg) center no-repeat fixed;
+		background-size: cover;
+	}
+
+	#MyPlaylist .el-main::-webkit-scrollbar {
+		/*滚动条整体样式*/
+		width: 0px;
+		/*高宽分别对应横竖滚动条的尺寸*/
+		/* height: 1px; */
+	}
+
+	#MyPlaylist .el-main::-webkit-scrollbar-thumb {
+		/*滚动条里面小方块*/
+		border-radius: 10px;
+		/* -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2); */
+		/* background: #535353; */
+		border-radius: 10px;
+		background-color: #F90;
+		background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, .2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%, transparent 75%, transparent);
+	}
+
+	#MyPlaylist .el-main::-webkit-scrollbar-track {
+		/*滚动条里面轨道*/
+		-webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+		border-radius: 10px;
+		background: #EDEDED;
+	}
+
+	#MyPlaylist .panel-inside {
+		margin-bottom: 0;
+		border: none;
+
+	}
+
+	#MyPlaylist .panel-inside>.panel-heading {
+		border-color: #EDEDED;
+		background-color: #EDEDED;
+	}
+
+	#MyPlaylist .pl-el-card {
+		border: none;
+		padding: 0px;
+	}
+
+	#MyPlaylist .pl-el-card .el-card__body {
+		padding: 0;
+	}
+
+	#MyPlaylist span code {
+		/* background-color: #EDEDED;
+		color: #ffa500; */
+		font-size: 14px;
+		letter-spacing: 1px;
+	}
+
+	#MyPlaylist .col-xs-2 i {
+		font-size: 16px;
+	}
+
+	#MyPlaylist .del-all-icon {
+		font-size: 18px;
+	}
+
+	 #MyPlaylist .el-message-box__wrapper .el-message-box {
+		width: auto;
+	}
+
+	 body .demo-class .layui-layer-btn .layui-layer-btn0 {
+		border: 1px solid #ccc;
+		color: #929692;
+		background-color: #fff;
+	}
+
+	 body .demo-class .layui-layer-btn .layui-layer-btn1 {
+		transition: all 0.3s ease;
+		background: transparent;
+		letter-spacing: 1px;
+		background-color: #fff;
+		color: #ffa500;
+		border: 1px solid #ffa500;
+	}
+body .demo-class .layui-layer-btn .layui-layer-btn1:hover{
+	color: #fff;
+	background-color: #ffa500;
+}
+	#MyPlaylist .el-popover-download {
+		border: none;
+	}
+
+	#MyPlaylist .el-popover-download .el-popover__title {
+		font-weight: bold;
+		font-size: 14px;
+		color: #67C23A;
+	}
+
+	#MyPlaylist .songID-form-control {
+		border-radius: 0px;
+	}
+
+	 video {
+		height: 40px;
+		width: 100%;
+		background-color: #fff;
+	}

@@ -1,0 +1,81 @@
+#account-index .main {
+		padding: 10px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		height: 96vh;
+		background: transparent url(../../assets/imgs/QQ图片20210508091723.jpg) center no-repeat fixed;
+	}
+	#account-index .ai-main-panel{
+		border-radius: 10px;
+		box-shadow: 0 0 1rem rgb(161 177 204 / 40%);
+	}
+	#account-index .list-item {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+		height: 100vh;
+		overflow: hidden;
+		margin-top: 2px;
+		border-radius: 10px;
+	}
+
+	#account-index .list-item:hover .item-image::before {
+		
+		background-color: rgba(0, 0, 0, 0.5);
+	}
+	
+	#account-index .list-item:hover .item-text{
+		color: #ffa500;
+	}
+	 #account-index .item-image {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		z-index: 0;
+		transform: translateZ(-50px) scale(1.5);
+	}
+
+	#account-index .item-image::before {
+		
+		content: "";
+		display: block;
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 0, 0, 0.4);
+		transition: all 0.3s ease;
+	}
+
+	#account-index .item-image .aimg {
+		display: block;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+
+	#account-index .item-text {
+		z-index: 1;
+		color: #ffffff;
+		font-family: "Courier New", Courier, monospace;
+		text-align: center;
+		transition: all 0.4s ease;
+		background: transparent;
+	}
+
+	#account-index .text-title {
+		
+		font-size: 22px;
+		font-weight: bolder;
+		margin-bottom: 20px;
+	}
+
+	#account-index .text-desc {
+		font-weight: bold;
+		letter-spacing: 1px;
+		font-size: 13px;
+	}

@@ -1,0 +1,28 @@
+#DefaultFaces .container-fluid .panel-main {
+	box-shadow: 0 0 1rem rgb(161 177 204 / 40%);
+}
+
+#DefaultFaces .container-fluid .panel-main .panel-body {
+	max-height: 93vh;
+	overflow: auto;
+}
+
+#DefaultFaces .container-fluid .panel-main .panel-body::-webkit-scrollbar {
+	width: 0px;
+}
+
+#DefaultFaces .container-fluid .panel-main .panel-body .row .img-item {
+	margin-top: 5px;
+}
+
+#DefaultFaces .container-fluid .panel-main .panel-body .row .img-item :hover {
+	filter: progid:DXImageTransform.Microsoft.Shadow(color=#FFA500, direction=120, strength=4);
+	box-shadow: 1px 1px 20px #FFA500;
+}
+#DefaultFaces .container-fluid .panel-main .panel-body .row .img-item .img-thumbnail{
+	padding: 1px;
+}
+#DefaultFaces .container-fluid .panel-main .panel-body .row .img-item img {
+	max-height: 8vh;
+	cursor: pointer;
+}

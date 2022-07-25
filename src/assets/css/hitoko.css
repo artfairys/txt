@@ -1,0 +1,153 @@
+#hitoko .panel-hitoko .panel-footer{
+	padding-bottom: 2vh;
+	border: none;
+	box-shadow: 0 0 1rem rgb(161 177 204 / 40%);
+}
+
+/* panel-body */
+#hitoko .panel-body-hitoko {
+	padding: 15px 10px;
+	overflow-y: auto;
+	background: transparent url(../../assets/imgs/QQ图片20210508091723.jpg) center no-repeat fixed;
+}
+
+/* #hitoko .panel-body-hitoko 滚动条一隐藏 */
+#hitoko .panel-body-hitoko::-webkit-scrollbar {
+	width: 0px;
+}
+
+/* panel-body-exist高度 */
+#hitoko .hitokos-body-exist {
+	height: 75vh;
+
+}
+
+/* hitokos-body-notexist高度 没有数据时...*/
+#hitoko .hitokos-body-notexist {
+	height: 75vh;
+	color: #ffa500;
+}
+
+#hitoko .hitokos-body-notexist .row-notexist {
+	margin-top: 20vh;
+}
+
+/* 无数据的提示文字div */
+#hitoko .hitokos-body-notexist .row-notexist .col-text {
+	letter-spacing: 2px;
+	text-shadow: 5px 2px 6px #ffa500;
+}
+
+/* 无数据的文本框div */
+#hitoko .hitokos-body-notexist .row-notexist .col-tbox {
+	margin-top: 5vh;
+}
+
+/* 无数据的提示文字和文本框和提交按钮 */
+#hitoko .hitokos-body-notexist .row-notexist .col-text,
+#hitoko .hitokos-body-notexist .row-notexist .col-tbox,
+#hitoko .hitokos-body-notexist .row-notexist .col-btn{
+	padding: 0;
+}
+
+/* 添加或 编辑的 box panel */
+#hitoko .panel-footer{
+	background: transparent url(../../assets/imgs/QQ图片20210508091723.jpg) center no-repeat fixed;
+	padding: 0;
+}
+#hitoko .hitokos-body-notexist .row-notexist .col-tbox textarea,
+#hitoko .panel-footer .container-fluid textarea{
+	letter-spacing: 1px;
+	resize: none;
+	font-size: 15px;
+	font-weight: 500;
+	color: #FF7900;
+	height: 10vh;
+	padding-left: 15px;
+	border: 2px solid #fff;
+	border-radius: 8px;
+	background: transparent url(../../assets/imgs/QQ图片20210508091723.jpg) center no-repeat fixed;
+}
+/* 无数据box获得焦点 */
+#hitoko .hitokos-body-notexist .row-notexist .col-tbox textarea,
+#hitoko .panel-footer .container-fluid textarea:focus {
+	border: 2px solid #ffa500;
+	background-color: #f8f8f8;
+	box-shadow: none !important;
+	background: #FFFAE8;
+}
+/* 无数据提交按钮 */
+#hitoko .hitokos-body-notexist .row-notexist .col-btn button,
+#hitoko .panel-footer .container-fluid button{
+	border: 2px solid #ffa500;
+	color: #ffa500;
+	transition: all 0.4s ease;
+	background: transparent;
+	padding: 6px 18px;
+	font-size: 14px;
+	letter-spacing: 2px;
+	border-radius: 10px;
+	font-weight: bold;
+	margin-top: 2vh;
+}
+/* 无数据提交按钮鼠标浮动 */
+#hitoko .hitokos-body-notexist .row-notexist .col-btn button,
+#hitoko .panel-footer .container-fluid button:hover {
+	color: #fff;
+	background: #ffa500;
+	border-color: #ffa500;
+	text-decoration: none;
+}
+
+#hitoko .hitokos-body-exist .is-always-shadow {
+	/* filter: blur(2px); */
+	background-image: linear-gradient(120deg, #FFFAE8 0%, #ffa500 100%);
+	/* background: transparent url(../../assets/imgs/QQ图片20210508091723.jpg) center no-repeat fixed; */
+	color: #8a6d3b;
+	border: none;
+	border-radius: 10px;
+
+}
+
+#hitoko .hitokos-body-exist .el-card__body {
+	transition: all 0.4s ease;
+	background: transparent;
+	border: none;
+}
+
+#hitoko .hitokos-body-exist .el-card__body:hover {
+	
+	background-color: #ffa500;
+	
+}
+
+/* 时间线 card里的内容 */
+#hitoko .hitokos-body-exist a {
+	text-decoration: none
+}
+
+/* 内容 h4 */
+#hitoko .hitokos-body-exist a h4 {
+	margin: 0;
+	font-size: 16px;
+	font-weight: 400;
+	letter-spacing: 1px;
+
+}
+
+/* 内容文字加阴影 */
+#hitoko .hitokos-body-exist a h4 span {
+	/* text-shadow: 5px 2px 6px #fff; */
+}
+
+/* 时间线的时间文字 */
+#hitoko .hitokos-body-exist .el-timeline-item__timestamp {
+	font-weight: bold;
+	color: #67c23a;
+}
+
+
+/* #hitoko .panel-hitoko .el-timeline-item__node--normal {
+		background-color: rgb(103, 194, 58);
+	} */
+

@@ -1,0 +1,161 @@
+
+/**
+ * 壁纸主体
+ 
+ */
+
+#Wallpapers {
+	min-height: 100vh;
+	background-color: #F5F5F5;
+}
+
+#Wallpapers .parent-container {
+	margin: 0 4%;
+}
+
+#Wallpapers .wallpaper-container {
+	padding-top: 100px;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+/* #Wallpapers .wallpaper-container .row{
+	text-align: left;
+} */
+#Wallpapers .wallpaper-container .col-img{
+	margin: 9px 0;
+	padding: 0 7px;
+	/* float: left; */
+}	
+#Wallpapers .wallpaper-container .img-thumbnail{
+	box-shadow: 0 0 5px rgb(0 0 0 / 20%);
+	border: none;
+}
+#Wallpapers .wallpaper-container .img-box {
+	position: relative;
+	min-height: 260px;
+	/* max-height: 14.86875vw; */
+	width: 100%;
+	background: no-repeat ;
+	background-size: cover;
+	border-radius: 4px;
+	/* cursor: pointer; */
+	transition: all 0.4s ease;
+}
+#Wallpapers .wallpaper-container .img-box:hover{
+	box-shadow: 2px 2px 14px #FFA500;
+	/* border: 1px solid #FFA500; */
+}
+#Wallpapers .wallpaper-container .img-box:hover .download{
+	display: inline-block;
+	
+}
+#Wallpapers .wallpaper-container .img-box:hover .wish{
+	display: inline-block;
+}
+
+#Wallpapers .wallpaper-container .img-box .download{
+	cursor: pointer;
+	position: absolute;
+	right: 0px;
+	display: none;
+	height: 25px;
+	width: 40px;
+	text-align: center;
+	line-height: 27px;
+	color: #FFFFFF;
+	font-weight: bold;
+	font-size: 12px;
+	transition: all 0.3s ease; 
+	/* letter-spacing: 2px; */
+	background: rgba(0, 0, 0, 0.3);
+	border-radius: 7px;
+}
+#Wallpapers .wallpaper-container .img-box .download:hover{
+	color: #FFA500;
+}
+#Wallpapers .wallpaper-container .img-box .width-height,
+#Wallpapers .wallpaper-container .img-box .size{
+	color: #FFFFFF;
+	font-size: 12px;
+	letter-spacing: .1px;
+	font-weight: bold;
+	background: rgba(0, 0, 0, 0.3);
+	border-radius: 4px;
+	width: fit-content;
+}
+#Wallpapers .wallpaper-container .img-box .size{
+	position: absolute;
+	bottom: 0;
+	color: #FFFFFF;
+}
+#Wallpapers .wallpaper-container .img-box .wish{
+	position: absolute;
+	right: 2px;
+	bottom: 2px;
+	height: 20px;
+	width: 20px;
+	cursor: pointer;
+	display: none;
+}
+#Wallpapers .wallpaper-container .img-box .wish i{
+	font-size: 19px;
+	color: red;
+}
+/* 
+	分页样式
+ 
+ */
+
+#Wallpapers .page-container{
+	padding: 25px 0;
+	overflow-y: auto;
+}
+#Wallpapers .page-container .active{
+	background-color: #FFA500;
+}
+#Wallpapers .page-container li,
+#Wallpapers .page-container .btn-next,
+#Wallpapers .page-container .btn-prev{
+	transition: all 0.3s ease;
+	/* margin: 0 1px; */
+	height: 30px;
+	width: 40px;
+	font-size: 16px;
+	font-weight: normal;
+	line-height: 30px;
+	box-shadow: 0 0 5px rgb(0 0 0 / 20%);
+	border: none;
+	background-color: #FFFFFF;
+	color: #FFA500;
+}
+#Wallpapers .page-container .number:hover{
+	color: #FFFFFF;
+	background-color: #FFA500;
+}
+#Wallpapers .page-container .active{
+	color: #FFFFFF
+}
+#Wallpapers .page-container .active:hover{
+	color: #FFFFFF;
+}
+#Wallpapers .page-container .btn-quicknext:hover{
+	color: #FFFFFF;
+	background-color: #FFA500;
+}
+#Wallpapers .page-container  .btn-quickprev:hover{
+	color: #FFFFFF;
+	background-color: #FFA500;
+}
+#Wallpapers .page-container .btn-prev:hover{
+	color: #FFFFFF;
+	background-color: #FFA500;
+}
+#Wallpapers .page-container .btn-next:hover{
+	color: #FFFFFF;
+	background-color: #FFA500;
+}
+#Wallpapers .page-container .el-pagination{
+	margin: 0 auto;
+	width: fit-content;
+}

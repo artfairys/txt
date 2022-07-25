@@ -1,0 +1,213 @@
+#Nav .cover {
+	width: 100%;
+	height: 100%;
+	max-width: 100%;
+	max-height: 100%;
+
+	position: fixed;
+}
+
+#Nav .cover::before {
+	/* https://api.dongmanxingkong.com/suijitupian/acg/1080p/index.php */
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: transparent url(https://api.ixiaowai.cn/api/api.php) center center no-repeat;
+	filter: blur(10px);
+	z-index: -2;
+	background-size: cover;
+
+}
+
+#Nav .container {
+	overflow-y: auto;
+	z-index: 99;
+	height: 100vh;
+	max-height: 100%;
+	box-shadow: 1px 1px 60px black;
+	background-color: #fff;
+}
+
+#Nav .container::-webkit-scrollbar {
+	width: 0px;
+}
+
+#Nav .container .container-fluid {
+	padding: 2vh 0;
+}
+
+
+/* 	
+	头部--------------------------------------------------------------------------------------------------
+	--------------------------------------------------------------------------------------------------
+	--------------------------------------------------------------------------------------------------
+	--------------------------------------------------------------------------------------------------
+ */
+/**
+ * 图片的
+ 
+ 
+ 
+ */
+/* #Nav .container .container-fluid .nav-head .views-img{
+	padding:4px 0 15px 0;
+}
+
+#Nav .container .container-fluid .nav-head .views-img img{
+	transition: all 0.3s ease;
+	width: 100%;
+	max-width: 100%;
+	height: auto;
+}
+#Nav .container .container-fluid .nav-head .views-img img:hover{
+	border: 1px solid #FFA500;
+	box-shadow: 2px 2px 30px #FFA500;
+} */
+/**
+ * 文字的
+ 
+ 
+ 
+ */
+#Nav .container .container-fluid .nav-head > .col-lg-8{
+	margin-bottom: 10px;
+}
+#Nav .container .container-fluid .nav-head .views-text{
+	border: 1px solid #ddd;
+	box-shadow: 0 0 1rem rgb(161 177 204 / 40%);
+	margin-bottom: 10px;
+	transition: 0.3s all ease; 
+	
+}
+#Nav .container .container-fluid .nav-head .views-text:hover{
+	background-color: #FFA500;
+	color: #FFFFFF;
+	border: 1px solid #FFA500;
+	box-shadow: 0 0 1rem #FFA500;
+}
+#Nav .container .container-fluid .nav-head .views-text:hover h2{
+	
+	color: #FFFFFF;
+	transition: 0.3s all ease; 
+}
+#Nav .container .container-fluid .nav-head .views-text h2{
+	margin: 15px 0 10px;
+	color: #FFA500;
+	letter-spacing: 3px;
+}
+#Nav .container .container-fluid .nav-head img,
+#Nav .container .container-fluid .nav-head .panel-search{
+	/* max-height: 30vh; */
+	box-shadow: 0 0 1rem rgb(161 177 204 / 40%);
+}
+/* #Nav .container .container-fluid .nav-head .panel-search{
+	margin-top: 2vh;
+} */
+#Nav .container .container-fluid .nav-head .img-thumbnail,
+#Nav .container .container-fluid .nav-head .panel-search,
+#Nav .container .container-fluid .nav-head .col-interesting .panel-default {
+	border-radius: 0px;
+}
+
+#Nav .container .container-fluid .nav-head .panel-search .panel-body {
+	padding: 0;
+	border: 1px solid #fff;
+}
+
+/* 左侧大图 */
+#Nav .container .container-fluid .nav-head .col-lg-8 >.img-responsive{
+	transition: all 0.3s ease; 
+	/* cursor: pointer; */
+}
+#Nav .container .container-fluid .nav-head .col-lg-8 >.img-responsive:hover{
+	border: 1px solid #FFA500;
+	box-shadow: 2px 2px 30px #FFA500;
+}
+/* 搜索输入框 */
+#Nav .container .container-fluid .nav-head .panel-search input {
+	width: 100%;
+	height: 100%;
+	padding: 15px;
+	border: 1px solid #fff;
+	box-shadow: none !important;
+	transition: all 0.3s ease;
+	background: transparent;
+}
+#Nav .container .container-fluid .nav-head .panel-search input:focus {
+	color: #FFA500;
+}
+/* 	
+	导航部分--------------------------------------------------------------------------------------------------
+	--------------------------------------------------------------------------------------------------
+	--------------------------------------------------------------------------------------------------
+	--------------------------------------------------------------------------------------------------
+ */
+#Nav .container .container-fluid .nav-body {
+	padding-top: 3vh;
+}
+
+#Nav .container .container-fluid .nav-body .nav-panel {
+	box-shadow: 0 0 1rem rgb(161 177 204 / 40%);
+	border: none;
+
+}
+
+#Nav .container .container-fluid .nav-body .nav-panel .nav-panel-head {
+	background-color: #fff;
+	border-bottom: 1px solid #f1f4f9;
+}
+
+#Nav .container .container-fluid .nav-body .nav-panel .nav-panel-head strong {
+	font-size: 18px;
+	color: #6b7386;
+	transition: all 0.3s ease;
+
+}
+
+#Nav .container .container-fluid .nav-body .nav-panel .nav-panel-head strong:hover {
+	color: #FFA500;
+}
+
+
+#Nav .container .container-fluid .nav-body .nav-panel .nav-panel-body .nav-item {
+	cursor: pointer;
+	margin-top: 10px;
+	padding: 0 10px;
+
+	/* border: none; */
+}
+
+#Nav .container .container-fluid .nav-body .nav-panel .nav-panel-body .nav-item .el-card {
+	transition: all 0.3s ease;
+}
+
+#Nav .container .container-fluid .nav-body .nav-panel .nav-panel-body .nav-item .el-card:hover {
+	color: #FFf;
+	border: 1px solid #FFA500;
+	background-color: #FFA500;
+	box-shadow: 2px 2px 30px #FFA500;
+}
+
+#Nav .container .container-fluid .nav-body .nav-panel .nav-panel-body .nav-item strong {
+	display: inline-block;
+	/* 强制不换行 */
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	overflow: hidden; /*自动隐藏文字*/
+	letter-spacing: 0.4px;
+}
+#Nav .container .container-fluid .nav-body .nav-panel .nav-panel-body .nav-item strong .img-thumbnail{
+	padding: 2px;
+	height: 28px;
+	height: 28px;
+}
+/* body下的类名 全局唯一 */
+.nav-el-tooltip{
+	color: #8A6D3B;
+	letter-spacing: 1px;
+	border: 1px solid #8A6D3B;
+}

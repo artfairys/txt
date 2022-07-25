@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+		<link rel="icon"
+			href="https://himg.bdimg.com/sys/portrait/item/pp.1.a3ddae16.aaVVoaDOrGPgaVPxkwN14w.jpg"
+			type="image/x-icon" />
+		<!-- <title>Haruhi</title> -->
+		<!-- layui -->
+		<link href="https://www.layuicdn.com/layui/css/layui.css" rel="stylesheet">
+		<!-- bootstrap -->
+		<link href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+		<!-- bootstrap icon -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+		<!-- 音乐播放器样式 -->
+		<!-- <link href="https://cdn.bootcdn.net/ajax/libs/aplayer/1.10.1/APlayer.min.css" rel="stylesheet" /> -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.10.0/dist/APlayer.min.css">
+		<!-- mrx -->
+		<!-- <script async="" src="https://www.google-analytics.com/analytics.js"></script>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fians/Waves@0.7.6/dist/waves.min.css">
+		<link rel="stylesheet" href="https://limestart.cn/static/main-03eed653e9.css">
+		<link rel="stylesheet" href="https://limestart.cn/static/theme-26d27e6a51.js" /> -->
+		<link href="https://cdn.bootcdn.net/ajax/libs/fontawesome-iconpicker/3.2.0/css/fontawesome-iconpicker.min.css"
+			rel="stylesheet">
+	</head>
+	<body>
+		<noscript>
+			<strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript
+				enabled. Please enable it to continue.</strong>
+		</noscript>
+		<div id="app"></div>
+		<!-- jquery -->
+		<script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<!-- jquery cookie -->
+		<script src="https://cdn.bootcdn.net/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+		<!-- 搜狐GET_IP -->
+		<script src="http://pv.sohu.com/cityjson?ie=utf-8"></script>
+		<!-- bootstrap -->
+		<script src="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<!-- layui -->
+		<script src="https://www.layuicdn.com/layui/layui.js"></script>
+		<!-- 音乐播放器 -->
+		<!-- <script src="https://cdn.bootcdn.net/ajax/libs/aplayer/1.10.1/APlayer.min.js"></script> -->
+		<script src="https://cdn.jsdelivr.net/npm/aplayer@1.10.0/dist/APlayer.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/meting@2.0.1/dist/Meting.min.js"></script>
+		<!-- 看板娘 -->
+		<script src="https://cdn.jsdelivr.net/gh/stevenjoezhang/live2d-widget/autoload.js" id="live2dJS"></script>
+		<!-- 打字特效 -->
+		<script src="https://cdn.bootcdn.net/ajax/libs/ityped/1.0.3/index.min.js"></script>
+		<script src="https://cdn.bootcdn.net/ajax/libs/fontawesome-iconpicker/3.2.0/js/fontawesome-iconpicker.min.js"></script>
+		<script>
+			
+			$(function() {
+				
+				// var threshold = 160; // 打开控制台的宽或高阈值
+				// // 每秒检查一次
+				// window.setInterval(function() {
+				//     if (window.outerWidth - window.innerWidth > threshold ||
+				//         window.outerHeight - window.innerHeight > threshold) {
+				//         window.location.href="about:blank";
+				//         window.close();
+				//     }
+				// }, 1e3);
+				document.onkeydown = function() {
+					if (window.event && window.event.keyCode == 123) {
+
+						event.keyCode = 0;
+						event.returnValue = false;
+						layer.msg('大佬别扒了/(ㄒoㄒ)/~~')
+						return 
+					}
+					if (window.event && window.event.keyCode == 13) {
+						window.event.keyCode = 505;
+					}
+					if (window.event && window.event.keyCode == 8) {
+						alert(str + "\n请使用Del键进行字符的删除操作！");
+						window.event.returnValue = false;
+					}
+				}
+				document.oncontextmenu = function(event) {
+					if (window.event) {
+						event = window.event;
+					}
+					try {
+						var the = event.srcElement;
+						if (!((the.tagName == "INPUT" && the.type.toLowerCase() == "text") || the.tagName ==
+							"TEXTAREA")) {
+							return false;
+						}
+						return true;
+					} catch (e) {
+						return false;
+					}
+				}
+			})
+		</script>
+		
+	</body>
+</html>

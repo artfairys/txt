@@ -1,0 +1,311 @@
+/* 
+	#EditNote  区域---------------------------------------------------------------------------------------
+	---------------------------------------------------------------------------------------
+	---------------------------------------------------------------------------------------
+	---------------------------------------------------------------------------------------
+	---------------------------------------------------------------------------------------
+ */
+
+#EditNote .panel-success span label,
+#MyNote .panel-mynote-main .panel-body-notes .container-fluid .col-note .panel-footer span label{
+	margin: 0;
+}
+#EditNote .panel-success{
+	border: none;
+	box-shadow: 0 0 1rem rgb(161 177 204 / 40%);
+}
+#EditNote > .p-close{
+	text-align: right;
+	margin: 0;
+	padding-right: 1px;
+}
+#EditNote > .p-close a{
+	font-size: 30px;
+}
+
+#EditNote .panel-success .clTime{
+	border: 1px solid #CCCCCC;
+	border-bottom: none;
+	padding: 0 15px;
+}
+#EditNote .quill-editor .ql-container {
+	height: 85vh;
+}
+#EditNote .quill-editor ::-webkit-scrollbar {
+	width: 0px;
+	/* background-color:#67C23A; */
+}
+
+#EditNote .panel-body >input{
+	letter-spacing: 1px;
+	resize: none;
+	font-size: 15px;
+	font-weight: 500;
+	color: #FF7900;
+	padding-left: 15px;
+	border: 1px solid #CCCCCC;
+	width: 100%;
+	height: 4vh;
+}
+#EditNote .panel-body input:focus {
+	border: 1px solid #ffa500;
+	background-color: #f8f8f8;
+	box-shadow: none !important;
+	background: #FFFAE8;
+}
+/* 编辑时的底部按钮 */
+#EditNote .panel-edit .panel-note-footer .col-btn,
+#EditNote .panel-edit .panel-note-footer.row-add,
+#MyNote .panel-mynote-main .panel-body-notes .container-fluid .col-note a>.panel-success .panel-body,
+#EditNote .panel-success .panel-body{
+	padding: 0;
+}
+/* 删除和编辑按钮公共 */
+#EditNote .panel-edit .panel-note-footer .row-edit button,
+#EditNote .panel-edit .panel-note-footer .row-add button{
+	height: 100%;
+	width: 100%;
+	letter-spacing: 1px;
+	resize: none;
+	font-size: 15px;
+	font-weight: 500;
+	padding-left: 15px;
+	border: 1px solid #CCC;
+	border-top: none;
+	background-color: #fff;
+	padding: 0;
+	
+}
+/* 编辑按钮 */
+#EditNote .panel-edit .panel-note-footer .row-edit .note-edit-btn,
+#EditNote .panel-edit .panel-note-footer .row-add .note-add-btn{
+	color: #FF7900;
+	transition: all 0.3s ease;
+	background: transparent;
+	/* border-left: none; */
+}
+/*  编辑按钮 hover*/
+#EditNote .panel-edit .panel-note-footer .row-edit .note-edit-btn:hover{
+	color: #fff;
+	background: #ffa500;
+	border-color: #ffa500;
+	box-shadow: 0 2px 12px 0 #ffa500;
+}
+/* 添加按钮  hover*/
+#EditNote .panel-edit .panel-note-footer .row-add .note-add-btn:hover{
+	color: #fff;
+	background: #ffa500;
+	border-color: #ffa500;
+	box-shadow: 0 2px 12px 0 #ffa500;
+}
+/* 删除按钮 */
+#EditNote .panel-edit .panel-note-footer .row-edit .note-del-btn{
+	transition: all 0.3s ease;
+	background: transparent;
+	color: red;
+}
+/* 删除按钮 hover*/
+#EditNote .panel-edit .panel-note-footer .row-edit .note-del-btn:hover{
+	color: #fff;
+	background: red;
+	border-color: red;
+	box-shadow: 0 2px 12px 0 red;
+}
+/* 取消按钮 */
+#EditNote .panel-edit .panel-note-footer  .note-close-btn{
+	transition: all 0.3s ease;
+	background: transparent;
+	color: #929692;
+}
+/* 取消按钮 hover*/
+#EditNote .panel-edit .panel-note-footer  .note-close-btn:hover{
+	color: #fff;
+	background: #929692;
+	border-color: #929692;
+	box-shadow: 0 2px 12px 0 #929692;
+}
+/* 确定弹框 确认修改按钮 */
+body .note-update-check .layui-layer-btn .layui-layer-btn1{
+	transition: all 0.3s ease;
+	background: transparent;
+	letter-spacing: 1px;
+	resize: none;
+	font-size: 15px;
+	font-weight: 500;
+	padding-left: 15px;
+	border: 1px solid #ffa500;
+	/* border-top: none; */
+	background-color: #fff;
+	color: #ffa500;
+}
+
+body .note-update-check .layui-layer-btn .layui-layer-btn1:hover{
+	color: #fff;
+	background-color: #ffa500;
+}
+body .note-delete-check .layui-layer-btn .layui-layer-btn1{
+	transition: all 0.3s ease;
+	background: transparent;
+	letter-spacing: 1px;
+	resize: none;
+	font-size: 15px;
+	font-weight: 500;
+	padding-left: 15px;
+	border: 1px solid red;
+	/* border-top: none; */
+	background-color: #fff;
+	color: red;
+}
+body .note-delete-check .layui-layer-btn .layui-layer-btn1:hover{
+	color:#fff;
+	background-color: red;
+}
+/* 确定弹框 取消修改按钮 */
+body .note-update-check .layui-layer-btn .layui-layer-btn0,
+body .note-delete-check .layui-layer-btn .layui-layer-btn0{
+	background-color: #fff;
+	border: 1px solid #ccc;
+	color: #929692;
+}
+/* 
+	#ShowNote 区域---------------------------------------------------------------------------------------
+	---------------------------------------------------------------------------------------
+	---------------------------------------------------------------------------------------
+	---------------------------------------------------------------------------------------
+	---------------------------------------------------------------------------------------
+ */
+#ShowNote .panel-shownote-main {
+	box-shadow: 0 0 1rem rgb(161 177 204 / 40%);
+}
+#ShowNote .panel-shownote-main .panel-heading h3 {
+	
+	/* 强制不换行 */
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	overflow: hidden; /*自动隐藏文字*/
+}
+#ShowNote .panel-shownote-main .panel-heading b a,
+#ShowNote .panel-shownote-main .panel-heading h3{
+	color: #67C23A;
+}
+
+#ShowNote .panel-shownote-main .panel-heading b .el-icon-delete{
+	color: red;
+}
+#ShowNote .panel-shownote-main .panel-heading b .el-icon-edit{
+	
+	color: #337ab7;
+}
+#ShowNote .panel-shownote-main .panel-body .note-content {
+	/* padding-bottom: 20px; */
+	height: 90vh;
+	overflow-y: auto;
+}
+#ShowNote .panel-shownote-main .panel-body >.el-divider{
+	margin-top: 15px;
+}
+#ShowNote .panel-shownote-main .panel-body> .note-time{
+	margin: 0;
+}
+#ShowNote .panel-shownote-main .panel-body .note-content::-webkit-scrollbar {
+	width: 0px;
+	/* background-color:#67C23A; */
+}
+#ShowNote .ql-editor img{
+	width:auto;
+	max-width: 100%;
+}
+/* 
+	#MyNote 区域 ---------------------------------------------------------------------------------------
+	---------------------------------------------------------------------------------------
+	---------------------------------------------------------------------------------------
+	---------------------------------------------------------------------------------------
+	---------------------------------------------------------------------------------------
+*/
+#MyNote .panel-mynote-main{
+	box-shadow: 0 0 1rem rgb(161 177 204 / 40%);
+}
+/* 我的笔记 notelist body */
+#MyNote .panel-mynote-main>.panel-body{
+	height: 85vh;
+	overflow-y: auto;
+}
+#MyNote .panel-mynote-main>.panel-body::-webkit-scrollbar{
+	width: 0px;
+}
+/* panel-heading 里的字符 */
+#MyNote .panel-mynote-main h3,
+#MyNote .panel-mynote-main h3 b a{
+	color: #67C23A;
+}
+/* 包裹panel-body的col-xs/sm/md/lg-12/4/4/6 */
+#MyNote .panel-mynote-main .panel-body-notes .container-fluid .col-note{
+	border: none;
+	padding: 5px;
+}
+
+#MyNote .panel-mynote-main .panel-body-notes .container-fluid .col-note a{
+	text-decoration: none;
+}
+
+#MyNote .panel-mynote-main .panel-body-notes .container-fluid .col-note a>.panel-success{
+	margin: 0;
+	transition: all 0.3s ease;
+	background: transparent;
+	padding:30px 20px ;
+	color: #ffa500;
+	background-color: #fff;
+	letter-spacing: 2px;
+	font-weight: bold;
+	border-bottom: none;
+/* 	border: 1px solid #ffa500; */
+}
+#MyNote .panel-mynote-main .panel-body-notes .container-fluid .col-note a>.panel-success:hover{
+	/* element ui card 阴影 */
+	/* box-shadow: 0 2px 12px 0 rgb(0 0 0 / 10%); */
+	/* layer 弹框阴影 */
+	/* 1px 1px 50px rgb(0 0 0 / 30%) */
+	box-shadow: 0 2px 12px 0 #ffa500;
+	background-color: #ffa500;
+	color: #fff;
+	border: 1px solid #ffa500;
+	border-bottom: none;
+}
+#MyNote .panel-mynote-main .panel-body-notes .container-fluid .col-note .panel-footer{
+	padding: 0 10px;
+	border: 1px solid #d6e9c6;
+	border-top: none;
+	background-color: #fff;
+}
+#MyNote .panel-mynote-main .panel-body-notes .container-fluid .col-note .panel-footer span {
+	font-size: 13px;
+	color: #929692;
+}
+/* 编辑 icon的容器 */
+#MyNote .panel-mynote-main .panel-body-notes .container-fluid .col-note .div-edit-note{
+	width: 16px;
+	/* height: 16px; */
+	position: absolute;
+	right: 27px;
+	top: 10px;
+	z-index: 99;
+}
+#MyNote .panel-mynote-main .panel-body-notes .container-fluid .col-note .div-edit-note .el-icon-edit{
+	font-size: 16px;
+}
+/* 删除 icon的容器 */
+#MyNote .panel-mynote-main .panel-body-notes .container-fluid .col-note .div-remove-note{
+	width: 16px;
+	/* height: 16px; */
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	z-index: 99;
+}
+/* 删除 icon */
+#MyNote .panel-mynote-main .panel-body-notes .container-fluid .col-note .div-remove-note .el-icon-delete-note{
+	/* display: none; */
+	font-size: 16px;
+	color: red;
+}

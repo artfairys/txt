@@ -1,0 +1,96 @@
+
+#SuspensionButton{
+	
+}
+#SuspensionButton .action {
+	z-index: 9999;
+	position: fixed;
+	bottom: 50px;
+	right: 50px;
+	width: 50px;
+	height: 50px;
+	background-color: #FFFFFF;
+	border-radius: 50%;
+	box-shadow: 0 0 10px rgb(0 0 0 / 20%);
+
+}
+
+#SuspensionButton .action .push-btn {
+	position: relative;
+	height: 100%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #FFA500;
+	font-size: 25px;
+	border-radius: 50%;
+	cursor: pointer;
+	transition: 0.3s ease-in-out;
+	border: 1px solid #ddd;
+}
+
+#SuspensionButton .action .push-btn:hover {
+	background-color: #FFA500;
+	border: 1px solid #FFA500;
+	color: #FFFFFF;
+}
+
+/* 点击 */
+#SuspensionButton .action.active .push-btn {
+	transform: rotate(135deg);
+}
+
+#SuspensionButton .action ul {
+	box-shadow: 0 0 10px rgb(0 0 0 / 20%);
+	position: absolute;
+	bottom: 45px;
+	right: 10px;
+	background-color: #fff;
+	min-width: 150px;
+	padding: 20px;
+	border-radius: 20px;
+	opacity: 0;
+	visibility: hidden;
+	transition: 0.3s;
+}
+
+#SuspensionButton .action.active ul {
+	bottom: 65px;
+	opacity: 1;
+	visibility: visible;
+	transition: 0.3s;
+}
+
+#SuspensionButton .action ul li {
+	letter-spacing: 2px;
+	list-style: none;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	padding: 5px 0;
+	transition: all 0.3s ease;
+	cursor: pointer;
+	font-weight: bold;
+	opacity: 0.5;
+	border-radius: 4px;
+}
+
+#SuspensionButton .action ul li:hover {
+	opacity: 1;
+	border-radius: 4px;
+	color: #FFA500;
+}
+
+#SuspensionButton .action ul li:not(:last-child) {
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+#SuspensionButton .action ul li .label-danger {
+	position: absolute;
+	right: 20px;
+	font-size: 5px;
+	/* color: #000000; */
+	letter-spacing: 0px;
+	border-radius: 10px;
+}

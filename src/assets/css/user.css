@@ -1,0 +1,266 @@
+
+
+.ityped-cursor {
+		opacity: 1;
+		-webkit-animation: blink 0.7s infinite;
+		-moz-animation: blink 0.7s infinite;
+		animation: blink 0.7s infinite;
+		/* font-size: 20px;
+		font-weight: bold; */
+	}
+	
+	@keyframes blink {
+		0% {
+			opacity: 1;
+		}
+	
+		50% {
+			opacity: 0;
+		}
+	
+		100% {
+			opacity: 1;
+		}
+	}
+	
+	@-webkit-keyframes blink {
+		0% {
+			opacity: 1;
+		}
+	
+		50% {
+			opacity: 0;
+		}
+	
+		100% {
+			opacity: 1;
+		}
+	}
+	
+	@-moz-keyframes blink {
+		0% {
+			opacity: 1;
+		}
+	
+		50% {
+			opacity: 0;
+		}
+	
+		100% {
+			opacity: 1;
+		}
+	}
+	.cover {
+		width: 100%;
+		/* max-height: 100vh; */
+		position: relative;
+		background-color: rgba(0, 0, 0, 16%);
+	}
+
+	.cover::before {
+		content: '';
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: transparent url(../imgs/QQ图片20210508091723.jpg) center no-repeat fixed;
+		filter: blur(5px);
+		z-index: -1;
+		background-size: cover;
+		/* background-size:100% */
+
+	}
+
+	.container-main {
+		background-color: #fff;
+		box-shadow: 0px 0px 10px white;
+
+	}
+
+	.head-row {
+		margin: 15px 0;
+		height: 5vh;
+	}
+
+	h3 {
+		margin: 0;
+	}
+
+	.el-drawer {
+		overflow: scroll
+	}
+
+	 .font-change {
+		color: #92969A;
+		transition: all 0.3s ease;
+		background: transparent;
+		padding: 14px 8px;
+		font-size: 16px;
+		letter-spacing: 0.3px;
+		border-radius: 4px 0px 0px 4px;
+		line-height: 1.33333;
+		display: inline-block;
+		text-align: center;
+		font-weight: bold;
+		
+	}
+
+	.font-change:hover {
+		color: #ffa500;
+		background-color: rgba(0, 0, 0, 0);
+	}
+
+	.main-row {
+		height: 100vh;
+	}
+
+	/* 头像阴影 */
+	#User .face-img {
+		width: 200px;
+		height: 200px;
+		/* border-radius: 50%; */
+		z-index: 99;
+		filter: progid:DXImageTransform.Microsoft.Shadow(color=#909090, direction=120, strength=4);
+		-moz-box-shadow: 2px 2px 10px #909090;
+		-webkit-box-shadow: 2px 2px 10px #909090;
+		box-shadow: 2px 2px 10px #909090;
+		transition: all 0.4s ease;
+		background: transparent;
+	}
+	#User .face-img:hover{
+		filter: progid:DXImageTransform.Microsoft.Shadow(color=#FFA500, direction=120, strength=4);
+		box-shadow:1px 1px 50px #FFA500;
+	}
+	#User
+
+	/* 头部 */
+	#User .head-row {}
+
+	/* panel阴影 */
+	#User .head-row .col-lg-12,
+	#User .face-panel,
+	#User .pl-panel-info,
+	#User .main-row .panel-note,
+	#User .chatroom-panel{
+		box-shadow: 0 0 1rem rgb(161 177 204 / 40%);
+	}
+
+	#User .face-panel {
+		border: none;
+	}
+	#User .container-fluid .container-main .main-row .face-panel .panel-footer div>.el-card{
+		color: #FFA500;
+		transition: all 0.3s ease;
+		background: transparent;
+		cursor: pointer;
+	}
+	#User .container-fluid .container-main .main-row .face-panel .panel-footer div>.el-card:hover{
+		color: #FFF;
+		background-color: #FFA500;
+		box-shadow: 3px 3px 10px #FFA500;
+		/* box-shadow:1px 1px 40px #FFA500; */
+	}
+	#User .container-fluid .container-main .main-row .face-panel .panel-footer .row .b-sex .fa-venus{
+		color: #F56C6C;
+	}
+	#User .container-fluid .container-main .main-row .face-panel .panel-footer .row .b-sex .fa-mars{
+		color: #409EFF;
+	}
+	/* 每日一言父级 */
+	#User .hikotoko-panel{
+		padding: 15px 8px;
+		border: 1px solid #f6d365;
+		color: #ffa500;
+		transition: all 0.4s ease;
+		background: transparent;
+		font-size: 13px;
+		letter-spacing: 2px;
+		text-align: center;
+		font-weight: bold;
+	}
+	/* 聊天室入口 */
+	#User .chatroom-panel{
+		
+		color: #ffa500;
+		font-size: 13px;
+		letter-spacing: 2px;
+		text-align: center;
+		font-weight: bold;
+		transition: all 0.4s ease;
+	}
+
+	#User .hikotoko-panel:hover{
+		color: #fff;
+		background: #ffa500;
+		border-color: #ffa500;
+		text-decoration: none;
+		/* 渐变色 */
+		/* background-image: linear-gradient(120deg, #f6d365 0%, #ffa500 100%); */
+	}
+	
+	#User .chatroom-panel:hover{
+		color: #fff;
+		background: #ffa500;
+		border-color: #ffa500;
+		text-decoration: none;
+		/* 渐变色 */
+		/* background-image: linear-gradient(120deg, #f6d365 0%, #ffa500 100%); */
+	}
+	#User #openChatRoom{
+		cursor: pointer;
+		padding: 20px 0px;
+	}
+	/* 笔记 */
+#User .main-row .panel-note .panel-body{
+	padding: 0;
+	overflow-y: auto;
+	height: 21vh;
+	border: none;
+}
+#User .main-row .panel-note .panel-body::-webkit-scrollbar {
+	width: 0px;
+	/* background-color:#67C23A; */
+}
+#User .main-row .panel-note .el-button span{
+	color:#67C23A
+}
+#User .main-row .panel-note .panel-body ul{
+	margin: 0;
+}
+#User .main-row .panel-note .panel-body ul .list-group-item {
+	border: 0 0 0 1px;
+	color: #ffa500;
+	font-size: 13px;
+	letter-spacing: 1px;
+	transition: all 0.3s ease;
+	background: transparent;
+	border: 1px solid #ebebeb;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	border-radius: 0px;
+}
+
+#User .main-row .panel-note .panel-body ul .list-group-item:hover {
+	color: #fff;
+	font-weight: bold;
+	background-color: #ffa500;
+	text-decoration: none;
+}
+#User .main-row .panel-note .panel-body .no-note{
+	height: 100%;
+	cursor: pointer;
+	color: #ffa500;
+	font-size: 13px;
+	letter-spacing: 1px;
+	transition: all 0.3s ease;
+	background: transparent;
+	padding: 50px;
+	text-align: center;
+}
+#User .main-row .panel-note .panel-body .no-note:hover{
+	color: #fff;
+	background: #ffa500 ;
+}
+/* #User::-moz-selection{background:#FFFFFF; color:#000000;} */
